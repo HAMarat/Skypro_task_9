@@ -4,7 +4,7 @@ class Player:
         self.used_words = []
 
     def __repr__(self):
-        return 'Класс Player собирает и обрабатывает информацию об игроке'
+        return f'Player({self.name}, {self.used_words})'
 
     def get_used_words(self):
         """

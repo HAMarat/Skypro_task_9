@@ -10,7 +10,8 @@ player_1 = Player(name_player)
 print('Привет', player_1.name)
 
 # создаем элемент класса Basic_word со случайным словом из данных выложенных на сайте
-basic_word_one = load_random_word('https://www.jsonkeeper.com/b/PZQ9')
+DATA_SOURCE = 'https://www.jsonkeeper.com/b/PZQ9'
+basic_word_one = load_random_word(DATA_SOURCE)
 
 # Выводим условия игры
 print(f'Составьте {basic_word_one.number_of_word()} слов из слова {basic_word_one.word}\n'

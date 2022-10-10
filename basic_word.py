@@ -1,10 +1,10 @@
-class Basic_word:
+class BasicWord:
     def __init__(self, word, right_words):
         self.word = word
         self.right_words = right_words
 
     def __repr__(self):
-        return 'Класс для проверки слов'
+        return f'Basic_word({self.word}, {self.right_words})'
 
     def checking_word(self):
         """
